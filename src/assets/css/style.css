@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(17, 86, 102);
+  --primary-color: #115666;
   --primary-color-darker: rgb(9, 48, 56);
+  --success: #5CA822;
+  --fail: #FF4037;
+  --warning: #FF701B;
 }
 
 * {
@@ -12,7 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
+  background: #115666;
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
@@ -39,12 +42,12 @@ form input {
 }
 
 form input:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid #115666;
 }
 
 form button {
   border: none;
-  background: var(--primary-color);
+  background: #115666;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -54,5 +57,57 @@ form button {
 }
 
 form button:hover {
-  background: var(--primary-color-darker);
+  background: #082B33;
+}
+
+.fail {
+  color: var(--fail);
+}
+
+.success {
+  color: var(--success);
+}
+
+.warning {
+  color: var(--warning);
+}
+
+.title {
+  margin: 0;
+}
+
+hr {
+  width:100%
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  width:100%;
+  height: 40px;
+  font-size: 18px;
+  background: #115666;
+  color:#eee;
+  border:#082B33;
+}
+
+input {
+  height: 40px;
+  width:100%;
+  font-size: 18px;
+  margin: 15px 0;
+  border: #082B33 solid 1px;
+  text-align: center;
+  color: #082B33;
+}
+
+input:disabled {
+  background-color: #C9E9FF;
 }
